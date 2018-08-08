@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+    <section class="landing">
+
+        
+
+    </section>
+
+    <section class = "service">
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <img src = "/images/focus.svg" height="110"/>
+                <h2>Brainstorm</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est possimus ut dolor qui culpa molestiae nostrum quibusdam, nobis dignissimos ab, commodi sit dolores, excepturi illum enim! Vero, sint sit.
+                </p>
+            </div>
+            <div class="col">
+                    <img src = "/images/archive.svg" height="110"/>
+                    <h2>Develop</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magni aliquam deleniti ducimus? Minus voluptatem repellat quidem, corporis nemo doloribus temporibus officiis natus mollitia cupiditate veritatis odit, consectetur sunt earum?
+                    </p>
+            </div>
+            <div class="col">
+                    <img src = "/images/clean.svg" height="110"/>
+                    <h2>Get Feedback</h2>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus, debitis blanditiis nobis dolor dicta, maiores, saepe exercitationem recusandae mollitia quisquam? Pariatur alias odit obcaecati cupiditate minima, reiciendis nulla soluta?
+                </p> 
+            </div>
+          </div>
+         </div>
+
+    </section>
+
+    <section class = "testimonial">
+        <h2 class="slider-title">Testimonials</h2>
+
+            <div class="w3-content w3-display-container">
+                 <div class="mySlides"> 
+                     <img src="https://tinyfac.es/data/avatars/475605E3-69C5-4D2B-8727-61B7BB8C4699-500w.jpeg" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fuga labore officiis officia similique quos ullam nesciunt deserunt ut, est expedita ipsum, ex non consequatur recusandae rem quo esse aut.</p>
+                 </div>
+                 <div class="mySlides"> 
+                    <img src="https://d3iw72m71ie81c.cloudfront.net/female-5.jpg" alt="">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                </div>
+                <div class="mySlides"> 
+                    <img src="https://d3iw72m71ie81c.cloudfront.net/female-34.jpg" alt="">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                </div>
+            <div class="slider-buttons">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            </div>
+
+    </section>
+
+    <section class = "action-message">
+
+        <h2>Sign up for more design help!</h2>
+       
+        <form>
+                <input type="text" name="firstname" placeholder="Name">
+            <input type="text" name="firstname" placeholder="Email">
+            <select id="country" name="country">
+                    <option value="option">Please Select Your Education Level</option>
+                    <option value="student">High School</option>
+                    <option value="teacher">Some College</option>
+                    <option value="neither">Bachelors</option>
+                    <option value="neither">Masters</option>
+                    <option value="neither">Beyond Masters</option>
+                    <option value="neither">Rather Not Answer</option>
+                  </select>
+            <input type="submit" value="Submit">
+       </form>
+
+
+    </section>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
